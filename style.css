@@ -1,5 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Dancing+Script:wght@600&family=Jost:wght@400;500&display=swap');
+
 /* Page: black background, silver text */
 body {
   background: black;
@@ -8,7 +9,8 @@ body {
   padding: 24px;
 }
 
-/* Title: dark gray letters with a dark blue shadow *//* Title: silver letters with a gold shadow */
+/* Title: dark gray letters with a dark blue shadow */
+/* Title: silver letters with a gold shadow */
 header {
   background: black;
   text-align: center;
@@ -18,10 +20,10 @@ header {
 
 h1 {
   margin: 0;
-font-family:'Allura', cursive;
-font-size: 54px;
-font-weight: normal;
-text-shadow: none;
+  font-family: 'Allura', cursive;
+  font-size: 54px;
+  font-weight: normal;
+  text-shadow: none;
   color: #c4c4c4;
   text-shadow: 2px 2px 0 #d49c22, 4px 4px 0 #d6ae58;
 }
@@ -41,7 +43,7 @@ footer {
   text-align: center;
   border-top: 1px solid #333;
   margin-top: 40px;
-} 
+}
 
 /* Menu: a row under the title */
 nav ul {
@@ -79,14 +81,26 @@ main h2 {
 
 /* Photos: silver border and a small tilt */
 main img {
-  border: 2px solid #423939;
+  border: 2px solid #5d4b56;
   padding: 4px;
 }
 
-main tr:nth-child(1) img { transform: rotate(-2deg); }
-main tr:nth-child(2) td:first-child img { transform: rotate(-3deg); }
-main tr:nth-child(2) td:last-child img { transform: rotate(3deg); }
-main tr:nth-child(3) img { transform: rotate(2deg); }
+main tr:nth-child(1) img {
+  transform: rotate(-2deg);
+}
+
+main tr:nth-child(2) td:first-child img {
+  transform: rotate(-3deg);
+}
+
+main tr:nth-child(2) td:last-child img {
+  transform: rotate(3deg);
+}
+
+main tr:nth-child(3) img {
+  transform: rotate(2deg);
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -99,7 +113,7 @@ main tr:nth-child(3) img { transform: rotate(2deg); }
   width: 100%;
   height: 300px;
   object-fit: cover;
-  border: 2px solid #c4c4c4;
+  border: 2px solid #866981;
 }
 
 /* Footer contact line */
@@ -115,6 +129,21 @@ footer a:hover {
   color: #c99f13;
 }
 
+.gallery img {
+  object-fit: cover;
+  object-position: center top;
+  /* keeps heads in frame */
+}
+.gallery a {
+  display: block;
+}
+
+.gallery a img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #902f2f;
+}
 
 
 
